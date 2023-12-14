@@ -14,10 +14,7 @@ CSS Estilizado: Implementamos um estilo atraente para melhorar a apresentação 
 
 Tecnologias Utilizadas:
 
-Python
-
-Flask
-
-MongoDB
-
-CSS
+Python,
+Flask,
+MongoDB,
+CSS,
