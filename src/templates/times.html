@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Times</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Times</h1>
+    </header>
+    <div class="container">
+        <ul>
+            {% for time in times %}
+            <li>{{ time.name }} - <a href="/times/editar/{{ time.name }}">Editar</a> | <a
+                    href="/times/excluir/{{ time.name }}">Excluir</a></li>
+            {% endfor %}
+        </ul>
+        <div class="center-link">
+            <a href="/times/adicionar" class="btn-link">Adicionar Time</a>
+        </div>
+    </div>
+    <footer>
+        &copy; thanks all
+    </footer>
+</body>
+
+</html>

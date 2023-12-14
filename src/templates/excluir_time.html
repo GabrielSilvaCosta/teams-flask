@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Excluir Time</h1>
+    </header>
+    <div class="container excluir-container">
+        <p>Tem certeza que deseja excluir o time "{{ time.name }}"?</p>
+        <form method="POST" action="/times/excluir/{{ time.name }}">
+            <button type="submit">Sim, Excluir</button>
+            <a href="/times">Cancelar</a>
+        </form>
+    </div>
+    <footer>
+        &copy; thanks all
+    </footer>
+</body>
+
+</html>
